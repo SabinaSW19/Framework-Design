@@ -1,0 +1,11 @@
+<p>Can't decide? Just press shuffle!</p>
+<p>You can shuffle from {{sources.length}} elements.</p>
+<p>These items are from the category {{category}}</p>
+<button (click)="shuffle()">Shuffle</button>
+<div id="myModal" class="modal" (click)="clickModal()" >
+  <img class="imageSrc" id="imageSrc"  (mousemove)="showInfo()" (mouseout)="noInfo()">
+  <div class="centered" id="textForImg"></div>
+  <div id="modalNumber"></div>
+  <div id="desc"></div>
+</div>
+
